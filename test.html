@@ -1,0 +1,36 @@
+<body><div class="parent">
+    <div class="child">
+      TEXT
+    </div>
+  </div>
+  
+  <style>
+    .parent {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px; /* Fixed height */
+      width: 600px; /* Example width */
+      background-color: lightgray;
+    }
+  
+    .child {
+      display: flex;
+      align-items: center; 
+      justify-content: center;
+      height: 100%; /* Full height of parent */
+      width: 80%; /* Example width */
+      background: white;
+      border: 1px solid #000;
+      text-align: center;
+      font-size: 100%; /* Default size */
+    }
+  
+    .child span {
+      font-size: calc(1em + 5vw); /* Adjust text size dynamically */
+      line-height: 1; /* Prevents extra space */
+      white-space: nowrap; /* Prevents text from wrapping */
+    }
+  </style>
+</body>
+  
